@@ -1,0 +1,18 @@
+# Copy to a local config.toml and customize.
+
+[source]
+# Leave blank to use the platform default screenshot folder.
+directory = ""
+
+[destination]
+# Leave blank to use Pictures/Lucid Screenshots.
+root = ""
+
+[organizer]
+recursive = false
+minimum_ocr_characters = 4
+max_label_words = 6
+settle_seconds = 1.0
+
+[logging]
+level = "INFO"
