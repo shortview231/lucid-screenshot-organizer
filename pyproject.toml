@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lucid-screenshot-organizer"
+version = "0.1.0"
+description = "Local-first screenshot organizer for Windows 11 and Pop!_OS"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Pillow>=10.0",
+  "watchdog>=4.0",
+  "pytesseract>=0.3.13",
+]
+
+[project.scripts]
+lucid-screenshot-organizer = "lucid_screenshot_organizer.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
