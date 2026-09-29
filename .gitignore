@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+config.toml
+logs/
+screenshots/
+*.db
+device.json
+local-inventory.jsonl
+local-move-log.jsonl
+.DS_Store
+Thumbs.db
